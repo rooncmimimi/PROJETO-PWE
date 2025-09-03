@@ -1,59 +1,52 @@
 .container  {
-  
+  grid-template-columns: auto 1fr auto;
   display: grid;
-  grid-template-columns: 5fr  1fr;
-  grid-template-rows: 25vh 15vh 60vh;
+  grid-template-rows: 150px 1400px;
   grid-template-areas:
-    "header header"
-    "nav nav"
-    "main aside";
+    "header header "
+    "main main";
 }
 
 body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
-
 
 header {  
-  image-orientation: end;
-  text-align: center;
-  object-fit: cover;
-    justify-content:space-between ;
-    align-items: center;
-    display: flex;
-  color: #161616;
+  display: grid; 
+  grid-template-columns: auto 1fr auto; 
+  align-items: center;
+  background-color: rgb(58, 74, 78);
+  color: #000000;
   font-family: 'Twilight New Moon';
+  font-size: 45px;
   grid-area: header;
 }
+
 @font-face {
   font-family: 'Twilight New Moon';
   src: url(/fonts/twilight_new_moon/twilight\ New\ Moon.ttf)
 }
-nav {  
-  text-align: center;
-  font-family: 'Uncial Antiqua';
-  background: rgb(83, 43, 43);
-  grid-area: nav;  
-}
 
 main { 
   grid-area: main;
-  background: rgb(36, 56, 27);
-}
-
-aside { 
-  grid-area: aside; 
-  background: rgb(116, 177, 110);
+  background: rgb(166, 166, 167);
 }
 
 header img { 
-    width: 50;
-    max-height: 100;
-    
+  margin-top: 0;
+    width: 50px;
+    max-height: 100px;
+}
 
+.titulo {
+  text-align: center;
+  margin-top: 0; 
 
+}
 
+.avatar {
+  width: 100px;
+  height: auto;
 
 }
