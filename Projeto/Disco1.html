@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Hamburger sem JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <input type="checkbox" id="menu-toggle">
+    
+    <div class="*">
+        <header>
+            <div class="logo">MeuSite</div>
+            <label for="menu-toggle" class="menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </header>
+        
+        <div class="content">
+            <h1>Menu Hamburger sem JavaScript</h1>
+            <p>Este menu de navegação com três riscos (hamburger) foi criado usando apenas HTML e CSS, sem nenhum JavaScript.</p>
+            <p>Clique no ícone de três riscos no canto superior direito para abrir o menu.</p>
+            
+            <div class="features">
+                <div class="feature">
+                    <h3>Como funciona</h3>
+                    <p>Utilizamos um checkbox escondido e o seletor :checked do CSS para controlar a exibição do menu.</p>
+                </div>
+                <div class="feature">
+                    <h3>Vantagens</h3>
+                    <p>Não depende de JavaScript, é mais leve e funciona mesmo com JS desabilitado no navegador.</p>
+                </div>
+                <div class="feature">
+                    <h3>Responsivo</h3>
+                    <p>Este menu é totalmente responsivo e funciona perfeitamente em dispositivos móveis e desktop.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <nav class="menu">
+        <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Portfólio</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+    
+    <label for="menu-toggle" class="overlay"></label>
+    
+    <footer>
+        <p>© 2023 MeuSite - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>

@@ -1,4 +1,4 @@
-.container  {
+-b  .container  {
   grid-template-columns: auto 1fr auto;
   display: grid;
   grid-template-rows: 150px 1400px;
@@ -25,7 +25,7 @@ header {
 
 @font-face {
   font-family: 'Twilight New Moon';
-  src: url(/fonts/twilight_new_moon/twilight\ New\ Moon.ttf)
+  src: url(../fonts/twilight_new_moon/twilight\ New\ Moon.ttf)
 }
 
 main { 
@@ -48,5 +48,4 @@ header img {
 .avatar {
   width: 100px;
   height: auto;
-
 }
