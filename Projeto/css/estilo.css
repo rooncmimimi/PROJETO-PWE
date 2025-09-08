@@ -66,9 +66,9 @@ header img {
       border: 1px solid #ddd;
       border-radius: 10px;
       overflow: hidden;
-      object-position: center;
+      text-align: center;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      transition: transform 5s ;
+      transition: transform 2s ;
       max-width: 100px;
 
     }
