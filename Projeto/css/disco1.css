@@ -1,7 +1,7 @@
-header {
+Header {
     padding: 20px;
   text-align: center;
-  background-color: rgb(29, 38, 51);
+  background-color: rgb(255, 255, 255);
   border-bottom: 2px solid #0b1218b2;
   position: relative;
   grid-area: header;
@@ -9,7 +9,7 @@ header {
 
 
 body {
-    background-color: rgb(136, 146, 153);
+    background-color: rgb(255, 255, 255);
     margin: 0;
     display: grid;
 }
@@ -30,19 +30,19 @@ body {
     border: 3px solid rgba(0, 0, 0, 0.164);
 }
 
-.banner {
+.main {
     height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    grid-area: banner;
+    grid-area: main;
 }
 
-.banner-texto h2 {
+.main h2 {
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 3em;
-    color: rgb(36, 47, 54);;
+    color: rgb(36, 47, 54);
     text-shadow: 2px 2px 10px #f9fcff9e;
     font-style: italic;
   }
@@ -69,7 +69,7 @@ body {
     background: rgba(110, 192, 176, 0.09);
     border-radius: 8px;
     padding: 18px 22px;
-    color: #141f33;
+    color: #ffffff;
     font-size: 1.08em;
     box-shadow: 0 2px 8px #3d49608e;
     max-width: 260px;
@@ -92,11 +92,11 @@ body {
         color: #fff;
        padding: 20px;
        text-align: center;
-       border-bottom: 2px solid #0f1f2eb2;
+       border-bottom: 2px solid #ffffff;
        position:relative;
        top: 0;
        z-index: 10;
-       background-color: rgb(34, 43, 61);
+       background-color: rgb(0, 0, 0);
        grid-area: footer;
      
      }
@@ -119,8 +119,9 @@ body {
       top: 0;
       width: 200px;
       height: 100%;
-      background-color: rgba(34, 43, 61, 0.6);
+      background-color: rgba(0, 0, 0, 0.1);
       backdrop-filter: blur(8px);
+
       padding-top: 60px;
       transition: 800ms;
       float: right;
@@ -137,13 +138,13 @@ body {
     }
 
     .menu-lateral ul li a:hover{ 
-      background: #575757;
+      background: #ffffff;
       border-radius: 5px;
 
     }
     .menu-lateral ul li a{
       text-decoration: none;
-      color: #97a2b7;;
+      color: #000000;;
 
     }
     
@@ -163,6 +164,6 @@ body {
 
     .botao {
       font-size:40px ;
-      color: #97a2b7;
+      color: #000000;
       float: left;
     }
