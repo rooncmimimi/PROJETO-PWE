@@ -1,35 +1,15 @@
 header {
     padding: 20px;
   text-align: center;
-  background-color: rgb(29, 38, 51);
+  background-color: rgb(126, 43, 24);
   border-bottom: 2px solid #0b1218b2;
   position: relative;
   grid-area: header;
 }
 
-  .avatar {
-  width: 100px;
-  height: auto;
-  padding: 45px;
-        }
-
-/* Avatar redondo e bem posicionado no header */
-.avatar, #headerAvatar {
-  width: 50px;           /* tamanho desejado */
-  height: 50px;          /* mesma altura para ficar circular */
-  border-radius: 50%;    /* deixa redondo */
-  object-fit: cover;     /* mantém proporção e preenche o círculo */
-  display: block;
-  overflow: hidden;
-  margin: 0;             /* remove o padding que desloca a imagem */
-  position: absolute;    /* coloca o avatar no header */
-  top: 50%;              /* centraliza verticalmente */
-  right: 20px;           /* distância da direita */
-  transform: translateY(-50%); /* centraliza verticalmente */
-}
 
 body {
-    background-color: rgb(136, 146, 153);
+    background-color: rgb(18, 36, 43);
     margin: 0;
     display: grid;
 }
@@ -47,7 +27,7 @@ body {
     height: 150px; 
     object-fit: cover;
     border-radius: 10px; /* deixa as imagens com bordinhas arredondadas */
-    border: 3px solid rgba(0, 0, 0, 0.164);
+    border: 3px solid rgba(176, 84, 45, 0.768);
 }
 
 .banner {
@@ -57,14 +37,17 @@ body {
     justify-content: center;
     text-align: center;
     grid-area: banner;
+         background: url(../img/fundo.png) no-repeat center/cover;
 }
 
 .banner-texto h2 {
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 3em;
-    color: rgb(36, 47, 54);;
-    text-shadow: 2px 2px 10px #f9fcff9e;
+    font-family:cinzel decorative;
+    font-size: 4em;
+    color: rgb(255, 201, 139);
+    text-shadow: 2px 2px 10px #721b009e;
     font-style: italic;
+     margin-bottom: 20px;
+     text-decoration: underline #dcb17939;
   }
 
   .conteudo {
@@ -73,10 +56,12 @@ body {
   }
   
   .conteudo h2 {
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: cinzel decorative;
     font-size: 2em;
-    color: #2f3e58;
+    color: rgb(220, 177, 121);
     margin-bottom: 20px;
+     text-shadow: 2px 2px 10px #2996949e;
+
   }
   .depoimentos-container {
     display: flex;
@@ -86,10 +71,10 @@ body {
   }
   
   .depoimento {
-    background: rgba(110, 192, 176, 0.09);
+    background: rgb(126, 42, 24);
     border-radius: 8px;
     padding: 18px 22px;
-    color: #141f33;
+    color: #ffe8c9;
     font-size: 1.08em;
     box-shadow: 0 2px 8px #3d49608e;
     max-width: 260px;
@@ -103,7 +88,7 @@ body {
   .depoimento span {
     display: block;
     margin-top: 12px;
-    color: #3d496e;
+    color: rgb(84, 143, 143);
     font-size: 0.98em;
     font-style: italic;
   }
@@ -116,7 +101,7 @@ body {
        position:relative;
        top: 0;
        z-index: 10;
-       background-color: rgb(34, 43, 61);
+       background-color: rgb(126, 42, 24);
        grid-area: footer;
      
      }
@@ -125,8 +110,13 @@ body {
        font-size: 18px;
         font-family:'Times New Roman', Times, serif;
        font-style: italic;
-       color: #a3a7a8;
+       color: #ffd9b3;
      }
+      .avatar {
+          width: 100px;
+          height: auto;
+          padding: 45px;
+        }
         
     .menu-lateral { 
       position: fixed;
@@ -134,7 +124,7 @@ body {
       top: 0;
       width: 200px;
       height: 100%;
-      background-color: rgba(34, 43, 61, 0.6);
+      background-color: rgba(49, 127, 139, 0.307);
       backdrop-filter: blur(8px);
       padding-top: 60px;
       transition: 800ms;
@@ -148,6 +138,9 @@ body {
 
     .menu-lateral ul li {
       margin: 15px 0;
+        font-size: 20px;
+        font-family:'Times New Roman', Times, serif;
+       font-style: italic;
     
     }
 
@@ -158,8 +151,8 @@ body {
     }
     .menu-lateral ul li a{
       text-decoration: none;
-      color: #97a2b7;;
-
+        color: rgb(86, 210, 206);
+     text-shadow: 2px 2px 10px #060b0e9e;
     }
     
     #check:checked ~ .menu-lateral {
@@ -178,8 +171,6 @@ body {
 
     .botao {
       font-size:40px ;
-      color: #97a2b7;
+      color: #3e9a9a;
       float: left;
     }
-
-    

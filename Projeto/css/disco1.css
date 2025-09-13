@@ -1,7 +1,7 @@
 Header {
     padding: 20px;
   text-align: center;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(126, 42, 24);
   border-bottom: 2px solid #0b1218b2;
   position: relative;
   grid-area: header;
@@ -9,7 +9,7 @@ Header {
 
 
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(18, 36, 43);
     margin: 0;
     display: grid;
 }
@@ -30,63 +30,24 @@ body {
     border: 3px solid rgba(0, 0, 0, 0.164);
 }
 
-.main {
+.banner {
     height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    grid-area: main;
+    grid-area: banner;
+       background: url(../img/fundo.png) no-repeat center/cover;
 }
 
-.main h2 {
+.banner-texto h2 {
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 3em;
-    color: rgb(36, 47, 54);
-    text-shadow: 2px 2px 10px #f9fcff9e;
+    color: rgb(255, 214, 153);
+    text-shadow: 2px 2px 10px rgb(1, 6, 8);
     font-style: italic;
   }
 
-  .conteudo {
-    padding: 50px 20px;
-    text-align: center;
-  }
-  
-  .conteudo h2 {
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 2em;
-    color: #2f3e58;
-    margin-bottom: 20px;
-  }
-  .depoimentos-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 18px;
-  }
-  
-  .depoimento {
-    background: rgba(110, 192, 176, 0.09);
-    border-radius: 8px;
-    padding: 18px 22px;
-    color: #ffffff;
-    font-size: 1.08em;
-    box-shadow: 0 2px 8px #3d49608e;
-    max-width: 260px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .depoimento span {
-    display: block;
-    margin-top: 12px;
-    color: #3d496e;
-    font-size: 0.98em;
-    font-style: italic;
-  }
 
     footer {
         color: #fff;
@@ -96,7 +57,7 @@ body {
        position:relative;
        top: 0;
        z-index: 10;
-       background-color: rgb(0, 0, 0);
+       background-color: rgb(126, 42, 24);
        grid-area: footer;
      
      }
@@ -105,7 +66,7 @@ body {
        font-size: 18px;
         font-family:'Times New Roman', Times, serif;
        font-style: italic;
-       color: #a3a7a8;
+       color: rgb(222, 170, 132);
      }
       .avatar {
           width: 100px;
@@ -119,9 +80,8 @@ body {
       top: 0;
       width: 200px;
       height: 100%;
-      background-color: rgba(0, 0, 0, 0.1);
+      background-color: rgba(49, 127, 139, 0.307);
       backdrop-filter: blur(8px);
-
       padding-top: 60px;
       transition: 800ms;
       float: right;
@@ -134,19 +94,24 @@ body {
 
     .menu-lateral ul li {
       margin: 15px 0;
+        font-size: 20px;
+        font-family:'Times New Roman', Times, serif;
+       font-style: italic;
     
     }
 
     .menu-lateral ul li a:hover{ 
-      background: #ffffff;
+      background: #575757;
       border-radius: 5px;
 
     }
     .menu-lateral ul li a{
       text-decoration: none;
-      color: #000000;;
+      color: rgb(86, 210, 206);
+     text-shadow: 2px 2px 10px #060b0e9e;
 
     }
+    
     
     #check:checked ~ .menu-lateral {
       left: 0px;
@@ -164,6 +129,19 @@ body {
 
     .botao {
       font-size:40px ;
-      color: #000000;
+      color:#4e7a87;
       float: left;
+    }
+
+    h5 {
+           margin: 15px 0;
+        font-size: 20px;
+        font-family:'Times New Roman', Times, serif;
+       font-style: italic;
+      color: #fdcc9b;
+       text-shadow: 2px 2px 10px #ffecc69e;
+       background-color:rgba(126, 43, 24, 0.507);
+       text-align:center;
+       text-indent: 1%;
+       text-anchor: end;
     }
