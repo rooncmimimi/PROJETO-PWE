@@ -12,7 +12,8 @@
 <header>
 
     <a href="index.html"><img src="IMG/versao3DEVDD.png" alt=""></a>
-    <a href="avatar.html" class="#avatar"><img src="IMG/avatar Orpheum M.png" alt="avatar" class="avatar"></a>
+    <a href="editarperfil.html" class="#avatar"><img id="headerAvatar" src="IMG/avatar.png" alt="avatar" class="avatar"></a>
+    <button class="logout-btn" onclick="logout()">Logout</button>
 
     <input type="checkbox" name="menu" id="check">
     <label for="check" class="botao">&#9776;</label>
@@ -23,6 +24,7 @@
       <li><a href="Discografia.html"> Discografia </a></li>
       <li><a href="Estatísticas.html"> Estatisticas </a></li>
       <li><a href="Sobre.html"> Sobre </a></li>
+      <li><a href="Login.html">Login</a></li>
   </ul>
 </nav>
 </header>
@@ -35,9 +37,9 @@
   </section>
   <br><br>
   <div class="image-gallery">
-  <a href="disco1.html"> <img src="IMG/Albúns/albumally.png" alt="disco placeholder"></a> 
-    <a href="disco2.html"><img src="IMG/Albúns/albumpedrouiui.png" alt="discro"></a>
-    <a href="disco3.html"><img src="IMG/Albúns/albumvitor.png" alt="disco"></a>
+  <a href="disco1.html"> <img src="img/albumally.png" alt=""></a> 
+    <a href="disco2.html"><img src="img/albumpedrouiui.png" alt=""></a>
+    <a href="disco3.html"><img src="img/albumvitor.png" alt=""></a>
 
 </div>
 <section id="depoimentos" class="conteudo">
@@ -66,9 +68,29 @@
     </p>
   </footer>
 
-
-
-
+  
     </div>
+
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Pega o usuário logado
+  const currentUser = JSON.parse(localStorage.getItem('currentUser'));
+  
+  if (currentUser && currentUser.avatar) {
+    const headerAvatar = document.getElementById('headerAvatar');
+    if (headerAvatar) {
+      headerAvatar.src = currentUser.avatar; // Substitui a imagem do avatar padrão
+    }
+  }
+});
+</script>
+
+<script>
+function logout() {
+    alert("Você clicou em Logout!");
+    // Aqui você pode colocar a lógica real de logout
+}
+</script>
+
 </body>
 </html>

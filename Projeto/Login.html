@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Centralizado</title>
+  <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+
+  <header>
+    <a href="index.html"><img src="IMG/versao3.png" alt=""></a>
+  </header>
+
+  <div class="login-container">
+    <div class="login-header">
+      <h1>Login</h1>
+      <p>Entre com suas credenciais para acessar sua conta</p>
+    </div>
+    
+    <form id="loginForm">
+      <div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="Seu endereço de e-mail" required>
+        <div class="error-message" id="emailError">Por favor, insira um e-mail válido</div>
+      </div>
+      
+      <div class="form-group">
+        <label for="password">Senha</label>
+        <input type="password" id="password" name="password" placeholder="Sua senha" required>
+        <div class="error-message" id="passwordError">A senha deve ter pelo menos 6 caracteres</div>
+      </div>
+      
+      <div class="form-options">
+        <div class="remember-me">
+          <input type="checkbox" id="remember" name="remember">
+          <label for="remember">Lembrar-me</label>
+        </div>
+        <a href="Perdiasenha.html" class="forgot-password">Esqueceu a senha?</a>
+      </div>
+      
+      <button type="submit" class="login-button">Entrar</button>
+    </form>
+    
+    <div class="signup-link">
+      Não tem uma conta? <a href="registrar.html">Cadastre-se</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>
+      Somewhere across the sea of time <br>
+      A love immortal such as mine <br>
+      Will come to me <br>
+      Eternally
+    </p>
+  </footer>
+
+<script src="js/login.js"></script>
+
+
+
+</body>
+</html>
