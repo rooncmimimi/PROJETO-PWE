@@ -20,6 +20,7 @@ body {
     gap: 20px; /* deixa espaço entre as imagens */
     margin-top: 30px; /* deixa espaço entre o texto e as imagens */
     flex-wrap: wrap;
+    
 }
 
 .image-gallery img {
@@ -32,10 +33,10 @@ body {
 
 .banner {
     height: 80vh;
-    display: flex;
-    align-items: center;
+    
+    align-items: top;
     justify-content: center;
-    text-align: center;
+    text-align: top;
     grid-area: banner;
 }
 
@@ -167,28 +168,37 @@ body {
       float: left;
     }
 
-    .sobre {
-      padding: 55px;
+  table {
+  display: flex;
+  width: 30%;
+  border-collapse: collapse;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin-top: 110px;
+  align-items: center;}
+
+th {
+  background-color: #333;
+  color: white;
+  padding: 12px;
+}
+
+td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+h2{
+  padding: 70px;
+  text-align: center;
+
+}
+
+h3  { padding: 15px;
       text-align: center;
            margin: 0;
-       font-size: 20px;
+       font-size: 25px;
         font-family:'Times New Roman', Times, serif;
        font-style: italic;
-       color: #2d2e2e;
-    } 
+       color: #2d2e2e;}
 
-   .disco  {
-    margin-top: 200px;
-    width: 450px;
-    height: auto;
-    animation: girar 7s linear infinite;
-  }
-
-          @keyframes girar {
-         from {
-         transform: rotate(0deg);
-}
-         to {
-        transform: rotate(360deg);
-}
-}
+       
