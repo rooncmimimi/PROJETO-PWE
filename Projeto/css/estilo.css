@@ -7,6 +7,26 @@ header {
   grid-area: header;
 }
 
+  .avatar {
+  width: 100px;
+  height: auto;
+  padding: 45px;
+        }
+
+/* Avatar redondo e bem posicionado no header */
+.avatar, #headerAvatar {
+  width: 50px;           /* tamanho desejado */
+  height: 50px;          /* mesma altura para ficar circular */
+  border-radius: 50%;    /* deixa redondo */
+  object-fit: cover;     /* mantém proporção e preenche o círculo */
+  display: block;
+  overflow: hidden;
+  margin: 0;             /* remove o padding que desloca a imagem */
+  position: absolute;    /* coloca o avatar no header */
+  top: 50%;              /* centraliza verticalmente */
+  right: 20px;           /* distância da direita */
+  transform: translateY(-50%); /* centraliza verticalmente */
+}
 
 body {
     background-color: rgb(136, 146, 153);
@@ -107,11 +127,6 @@ body {
        font-style: italic;
        color: #a3a7a8;
      }
-      .avatar {
-          width: 100px;
-          height: auto;
-          padding: 45px;
-        }
         
     .menu-lateral { 
       position: fixed;
@@ -166,3 +181,5 @@ body {
       color: #97a2b7;
       float: left;
     }
+
+    
