@@ -12,9 +12,7 @@
 <header>
 
     <a href="index.html"><img src="IMG/versao3DEVDD.png" alt=""></a>
-    <a href="editarperfil.html" class="#avatar"><img id="headerAvatar" src="img/avatar-m.png" alt="avatar" class="avatar"></a>
-    <button class="logout-btn" onclick="logout()">Logout</button>
-
+    <a href="Login.html" class="#avatar"><img id="headerAvatar" src="img/avatar-m.png" alt="avatar" class="avatar"></a>
     <input type="checkbox" name="menu" id="check">
     <label for="check" class="botao">&#9776;</label>
     <nav class="menu-lateral">
@@ -43,19 +41,19 @@
 
 </div>
 <section id="depoimentos" class="conteudo">
-    <h2>Depoimentos de clientes satisfeitos</h2>
+    <h2>Tipos de Discos</h2>
     <div class="depoimentos-container">
       <div class="depoimento">
-        <p>"farofinha gostosa..."</p>
-        <span>- Anônimo, 1899</span>
+        <p>Vinil (LP, EP, Singles)</p>
+        <span>Características e importância histórica.</span>
       </div>
       <div class="depoimento">
-        <p>"Ele tentou me comer"</p>
-        <span>- Ellen Hutter, 1838</span>
+        <p>Álbuns digitais</p>
+        <span>Plataformas e tendências atuais.</span>
       </div>
       <div class="depoimento">
-        <p>"não entendi o proposito do site..."</p>
-        <span>- Hóspede Misterioso(Pedro), 1950</span>
+        <p>CDs</p>
+        <span>A era digital antes do streaming.</span>
       </div>
     </div>
   </section>
@@ -72,24 +70,10 @@
     </div>
 
     <script>
-document.addEventListener('DOMContentLoaded', function() {
-  // Pega o usuário logado
-  const currentUser = JSON.parse(localStorage.getItem('currentUser'));
-  
-  if (currentUser && currentUser.avatar) {
-    const headerAvatar = document.getElementById('headerAvatar');
-    if (headerAvatar) {
-      headerAvatar.src = currentUser.avatar; // Substitui a imagem do avatar padrão
-    }
-  }
-});
+
 </script>
 
 <script>
-function logout() {
-    alert("Você clicou em Logout!");
-    // Aqui você pode colocar a lógica real de logout
-}
 </script>
 
 </body>

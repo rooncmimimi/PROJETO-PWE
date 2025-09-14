@@ -9,7 +9,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #0b1218b2;
+background-color: rgb(18, 36, 43);
 }
 
 /* Header fixo no topo */
@@ -28,20 +28,6 @@ header img {
   height: 180px;
 }
 
-/* Footer fixo no rodapé */
-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  text-align: center;
-  padding: 10px 0;
-  background: rgba(0,0,0,0.05);
-  font-size: 14px;
-  color: #555;
-  line-height: 1.5;
-  z-index: 10;
-}
 
 /* Caixa de login */
 .login-container {
@@ -113,7 +99,7 @@ footer {
 }
 
 .forgot-password {
-  color: #4a86e8;
+  color: rgba(176, 84, 45, 0.768);
   text-decoration: none;
 }
 
@@ -124,7 +110,7 @@ footer {
 .login-button {
   width: 100%;
   padding: 12px;
-  background-color: #4a86e8;
+  background-color: rgba(176, 84, 45, 0.768);
   color: white;
   border: none;
   border-radius: 5px;
@@ -134,7 +120,7 @@ footer {
 }
 
 .login-button:hover {
-  background-color: #3a76d8;
+  background-color: rgb(159, 66, 26);
 }
 
 .signup-link {
@@ -145,7 +131,7 @@ footer {
 }
 
 .signup-link a {
-  color: #4a86e8;
+  color: rgba(176, 84, 45, 0.768);
   text-decoration: none;
   font-weight: 500;
 }
